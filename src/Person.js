@@ -5,6 +5,7 @@ const Person = (props) => {
 
   return (
     <div key={id} className="person">
+      <img src={image} alt={name} className="image" />
       <h1>{name}</h1>
     </div>
   );

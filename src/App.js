@@ -8,15 +8,15 @@ function App() {
   const date = new Date();
   const sec = date.getSeconds();
 
-  /*  setTimeout(() => {
+  setTimeout(() => {
     setPerson((I) => {
-      if (person.id === 4) {
+      if (person.id === 5) {
         return Data[0];
       } else {
         return Data[person.id];
       }
     });
-  }, 3000); */
+  }, 1000);
 
   // setInterval(()=>console.log("Hello!"),2000)
   //useEffect(()=>{setInterval(()=>console.log("Hello!"),2000)},[]);
@@ -38,7 +38,7 @@ function App() {
             });
           }}
         >
-          LA
+          <p className="LA">LA</p>
         </div>
         <div className="RightArrow">RA</div>
         <div className="content">
