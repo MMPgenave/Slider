@@ -8,7 +8,7 @@ function App() {
   const date = new Date();
   const sec = date.getSeconds();
 
-  setTimeout(() => {
+  /*  setTimeout(() => {
     setPerson((I) => {
       if (person.id === 4) {
         return Data[0];
@@ -16,7 +16,7 @@ function App() {
         return Data[person.id];
       }
     });
-  }, 3000);
+  }, 3000); */
 
   // setInterval(()=>console.log("Hello!"),2000)
   //useEffect(()=>{setInterval(()=>console.log("Hello!"),2000)},[]);
