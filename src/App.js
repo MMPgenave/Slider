@@ -8,6 +8,7 @@ function App() {
   const date = new Date();
   const sec = date.getSeconds();
 
+  //auto-slider function
   setTimeout(() => {
     setPerson((I) => {
       if (person.id === 5) {
@@ -16,12 +17,33 @@ function App() {
         return Data[person.id];
       }
     });
-  }, 1000);
+  }, 5000);
 
   // setInterval(()=>console.log("Hello!"),2000)
   //useEffect(()=>{setInterval(()=>console.log("Hello!"),2000)},[]);
 
-  console.log(sec);
+  const prevPicture = (ID) => {
+    console.log(`leftArrow clicked, ID=${ID}`);
+    setPerson((I) => {
+      if (ID === 1) {
+        return Data[4];
+      } else {
+        return Data[ID - 2];
+      }
+    });
+  };
+
+  const nextPicture = () => {
+    setPerson((I) => {
+      if (person.id === 5) {
+        return Data[0];
+      } else {
+        return Data[person.id];
+      }
+    });
+  };
+
+  //console.log(sec);
 
   return (
     <>
@@ -30,17 +52,20 @@ function App() {
         <h1 className="title">Reviews</h1>
       </div>
       <div className="container">
-        <div
-          className="LeftArrow"
-          onClick={() => {
-            setPerson((value) => {
-              console.log("leftArrow clicked!");
-            });
-          }}
-        >
-          <p className="LA">LA</p>
+        <div className="LeftArrow">
+          <button
+            type="button"
+            className="LA"
+            onClick={() => prevPicture(person.id)}
+          >
+            LA
+          </button>
         </div>
-        <div className="RightArrow">RA</div>
+        <div className="RightArrow">
+          <button type="button" className="RA" onClick={() => nextPicture()}>
+            RA
+          </button>
+        </div>
         <div className="content">
           <Person info={person} />
         </div>
