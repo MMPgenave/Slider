@@ -8,14 +8,14 @@ import { FaQuoteRight } from "react-icons/fa";
 
 function App() {
   const [person, setPerson] = useState(Data[0]);
-  const date = new Date();
-  const sec = date.getSeconds();
+  const [flag, setFlag] = useState(true);
 
   //auto-slider function
-  useEffect(() => {
-    setTimeout(() => {
-      console.log("in setTimeout");
 
+  console.log(`flag=${flag}`);
+
+  if (flag) {
+    setTimeout(() => {
       setPerson((I) => {
         if (person.id === 5) {
           return Data[0];
@@ -24,14 +24,18 @@ function App() {
         }
       });
     }, 5000);
-  }, [person.id]);
+  }
 
+  if (!flag) {
+    setInterval(() => {
+      setFlag(true);
+    }, 5000);
+  }
   // setInterval(()=>console.log("Hello!"),2000)
   //useEffect(()=>{setInterval(()=>console.log("Hello!"),2000)},[]);
 
   const prevPicture = (ID) => {
-    console.log("before setPerson");
-
+    setFlag(false);
     setPerson((I) => {
       if (ID === 1) {
         return Data[4];
@@ -42,6 +46,8 @@ function App() {
   };
 
   const nextPicture = () => {
+    console.log("next button clicked");
+    setFlag(false);
     setPerson((I) => {
       if (person.id === 5) {
         return Data[0];
