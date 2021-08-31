@@ -3,33 +3,24 @@ import "./style.css";
 import Data from "./data";
 import { useState, useEffect } from "react";
 import Person from "./Person";
+import AutoSlider from "./autoslider";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 
 function App() {
-  const [person, setPerson] = useState(Data[0]);
+
+  const [Index, setIndex] = useState(0);
+
+  /* const [person, setPerson] = useState(Data[0]);
   const date = new Date();
   const sec = date.getSeconds();
-
+ */
   //auto-slider function
-  useEffect(() => {
-    setTimeout(() => {
-      console.log("in setTimeout");
-
-      setPerson((I) => {
-        if (person.id === 5) {
-          return Data[0];
-        } else {
-          return Data[person.id];
-        }
-      });
-    }, 5000);
-  }, [person.id]);
 
   // setInterval(()=>console.log("Hello!"),2000)
   //useEffect(()=>{setInterval(()=>console.log("Hello!"),2000)},[]);
 
-  const prevPicture = (ID) => {
+  /* const prevPicture = (ID) => {
     console.log("before setPerson");
 
     setPerson((I) => {
@@ -49,7 +40,7 @@ function App() {
         return Data[person.id];
       }
     });
-  };
+  }; */
 
   //console.log(sec);
 
@@ -61,21 +52,17 @@ function App() {
       </div>
       <div className="container">
         <div className="LeftArrow">
-          <button
-            type="button"
-            className="LA"
-            onClick={() => prevPicture(person.id)}
-          >
+          <button type="button" className="LA">
             <FiChevronLeft />
           </button>
         </div>
         <div className="RightArrow">
-          <button type="button" className="RA" onClick={() => nextPicture()}>
+          <button type="button" className="RA">
             <FiChevronRight />
           </button>
         </div>
         <div className="content">
-          <Person info={person} />
+          <AutoSlider />
         </div>
         <div className="quote">
           <FaQuoteRight />
