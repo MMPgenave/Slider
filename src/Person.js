@@ -7,6 +7,8 @@ const Person = (props) => {
     <div key={id} className="person">
       <img src={image} alt={name} className="image" />
       <h1>{name}</h1>
+      <h3>{job}</h3>
+      <p >{text}</p>
     </div>
   );
 };
