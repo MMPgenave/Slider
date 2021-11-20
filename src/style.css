@@ -71,7 +71,7 @@ body {
   grid-template-rows: 90% 10%;
   align-content: center;
   padding: 20px;
-  grid-gap: 1px;
+  grid-gap: 10px;
 }
 .LeftArrow {
   grid-column: 1/2;
@@ -82,18 +82,13 @@ body {
   margin-top: 100%;
   margin-bottom: 50%;
   text-align: center;
-  color: rgb(121, 71, 14);
+  color: rgb(245, 179, 114);
   font-weight: 1000;
   font-size: 50px;
-  margin-left: 1px;
-  border-radius: 10px;
-
-  
 }
 
 .LA:hover {
-  color: rgb(247, 121, 121);
-  
+  color: red;
 }
 .RightArrow {
   grid-column: 3/4;
@@ -104,43 +99,22 @@ body {
   margin-top: 100%;
   margin-bottom: 50%;
   text-align: center;
-  color: rgb(121, 71, 14);
+  color: rgb(245, 179, 114);
   font-weight: 1000;
   font-size: 50px;
-  border-radius: 10px;
 }
 .RA:hover {
-  color: rgb(247, 121, 121);
+  color: red;
 }
 .content {
   grid-column: 2/3;
   grid-row: 1/2;
-  text-align: center;
-}
-
-.content h1{
-  text-transform: uppercase;
-  color: rgb(10, 23, 37);
-  font-size: 30px;
-}
-
-.content h3 {
-  color: rgb(121, 71, 14);
-  text-transform:capitalize;
-  font-size: 25px;
-}
-
-.content p {
-  color: rgb(27, 26, 26) ;
-  font-size: 20px;
+  transition: ease 2000ms;
 }
 
 .quote {
   grid-row: 2/3;
   grid-column: 2/3;
-  text-align: center;
-  color: hsl(209, 61%, 16%);
-  font-size: 40px;
 }
 
 .image {
@@ -148,5 +122,13 @@ body {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid rgb(245, 209, 224);
+  border: 5px solid rgb(159, 159, 226);
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  transition: ease 2000ms;
 }

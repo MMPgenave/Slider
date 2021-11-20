@@ -1,0 +1,59 @@
+[33mcommit a003d2caab08c543e7c30413b06180675420c5e7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: MMPgenave <mohammadmp14@gmail.com>
+Date:   Thu Sep 9 21:49:22 2021 +0430
+
+    Final Changes
+
+[33mcommit 2130994d2e87782af781fdc68f658e8fd560756a[m
+Author: MMPgenave <mohammadmp14@gmail.com>
+Date:   Tue Aug 31 21:50:16 2021 +0430
+
+    Yes I made it. It is a new design for auto-slide show. the code is compeletly different from Johan Smilga!.
+
+[33mcommit 63dd3839a072c0735eab18036901e236649651aa[m[33m ([m[1;32msliderWriteWithClassComponent[m[33m)[m
+Author: MMPgenave <mohammadmp14@gmail.com>
+Date:   Tue Aug 31 01:14:22 2021 +0430
+
+    the left arrow when pressed, simultaneously runs the auto slider function and this caused problems!!!
+
+[33mcommit 80f7b42372ab3a77208e6ba458378bb833dd9691[m
+Author: MMPgenave <mohammadmp14@gmail.com>
+Date:   Mon Aug 30 21:55:39 2021 +0430
+
+    Left and Right button added
+
+[33mcommit 87b5becd25874f3b4458242cb8eafdd4c7a76ef5[m
+Author: MMPgenave <mohammadmp14@gmail.com>
+Date:   Mon Aug 30 20:41:41 2021 +0430
+
+    improving css
+
+[33mcommit 6b1c99f893aa4a4deecd84ac679a6a99d8057830[m
+Author: MMPgenave <77011306+MMPgenave@users.noreply.github.com>
+Date:   Mon Aug 30 16:10:19 2021 +0430
+
+    just saving to inshore that all codes writes in codesandbox are added to Github slider repo
+
+[33mcommit 03abdd2cd0fb1ec886ee515211d7bdc506ede17c[m
+Author: MMPgenave <77011306+MMPgenave@users.noreply.github.com>
+Date:   Mon Aug 30 15:59:53 2021 +0430
+
+    writing master code (auto slideShow)
+
+[33mcommit 2f11e9413a14442cc80498cfc0505679604aa9a3[m
+Author: MMPgenave <77011306+MMPgenave@users.noreply.github.com>
+Date:   Mon Aug 30 13:23:34 2021 +0430
+
+    constructing the grid (CSS)
+
+[33mcommit 1dcecea0aad0636ba65767413c5a4847c940eda5[m
+Author: MMPgenave <77011306+MMPgenave@users.noreply.github.com>
+Date:   Mon Aug 30 10:47:23 2021 +0430
+
+    initialize slide program
+
+[33mcommit a5aa1569599da72cf27628bdb8954cf3fe388422[m
+Author: MMPgenave <mohammadmp14@gmail.com>
+Date:   Sat Aug 28 22:03:27 2021 +0430
+
+    Creating react application named slider

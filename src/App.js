@@ -1,62 +1,48 @@
 import React from "react";
 import "./style.css";
 import Data from "./data";
-import { useState, useEffect,useRef } from "react";
+import { useState, useEffect } from "react";
 import Person from "./Person";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 
 function App() {
   const [person, setPerson] = useState(Data[0]);
-  const refFlag = useRef(true);
 
   //auto-slider function
-  console.log(`flag=${refFlag.current}`);
-
-  if (refFlag.current) {
-    setTimeout(() => {
-      setPerson((prevValue) => {
-        if (person.id === 4) {
-          return Data[0];
-        } else {
-          return Data[person.id+1];
-        }
-      });
-    }, 5000);
-  }
- 
+   const Timer = setTimeout(() => {
+     setPerson((I) => {
+       if (person.id === 5) {
+         return Data[0];
+       } else {
+         return Data[person.id];
+       }
+     });
+   }, 1000);
   
   useEffect(() => {
-    console.log('useEffect enabeld')
-    refFlag.current = true;
-    
-  })
-
-  const prevPicture = () => {
-        console.log("Previous button clicked");
-
-    refFlag.current = false;
-    setPerson((prevValue) => {
-      if (person.id === 0) {
+  return ()=>{clearTimeout(Timer);} 
+})
+  
+  const prevPicture = (ID) => {
+    setPerson((I) => {
+      if (ID === 1) {
         return Data[4];
       } else {
-        return Data[person.id - 1];
+        return Data[ID - 2];
       }
     });
   };
 
   const nextPicture = () => {
-    console.log("next button clicked");
-    refFlag.current = false;
-    setPerson((prevValue) => {
-      if (person.id === 4) {
+    setPerson((I) => {
+      if (person.id === 5) {
         return Data[0];
       } else {
-        return Data[person.id + 1];
+        return Data[person.id];
       }
     });
   };
-
 
 
   return (
@@ -70,17 +56,13 @@ function App() {
           <button
             type="button"
             className="LA"
-            onClick={() => prevPicture()}
+            onClick={() => prevPicture(person.id)}
           >
             <FiChevronLeft />
           </button>
         </div>
         <div className="RightArrow">
-          <button
-            type="button"
-            className="RA"
-            onClick={() => nextPicture()}
-          >
+          <button type="button" className="RA" onClick={() => nextPicture()}>
             <FiChevronRight />
           </button>
         </div>

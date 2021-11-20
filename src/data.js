@@ -1,7 +1,7 @@
 import mother from "./mother.jpg";
 const reviews = [
   {
-    id: 0,
+    id: 1,
     name: "susan smith",
     job: "web developer",
     image:
@@ -9,7 +9,7 @@ const reviews = [
     text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
   },
   {
-    id: 1,
+    id: 2,
     name: "anna johnson",
     job: "web designer",
     image:
@@ -17,7 +17,7 @@ const reviews = [
     text: "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
   },
   {
-    id: 2,
+    id: 3,
     name: "peter jones",
     job: "intern",
     image:
@@ -25,7 +25,7 @@ const reviews = [
     text: "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
   },
   {
-    id: 3,
+    id: 4,
     name: "bill anderson",
     job: "the boss",
     image:
@@ -33,11 +33,11 @@ const reviews = [
     text: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
   },
   {
-    id: 4,
+    id: 5,
     name: "Farahnaz Moshirpanahi",
-    job: "Farmer : Potatos Expert",
+    job: "Farmer, Potatos Expert",
     image: mother,
-    text: "I'm a best farmer in the west of Iran, Kurdistan province-Dehgolan town. I raise Potatoes of types : Jilii, Esprit, Ageria, and Georgina.My farm located in BAN-AWBARIC. In this picture you see me and my 399 tractor.",
+    text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
   },
 ];
 
